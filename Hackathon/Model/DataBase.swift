@@ -52,13 +52,22 @@ class DataBase {
     }
     
     init() {
-        category1.append(Question( q:"Prueba 1", ans1: "resp1", ans2: "ans2", ans3: "resp3", ans4:"resp4", correct: "resp4") )
-        category1.append(Question( q:"Prueba 2", ans1: "resp1", ans2: "ans2", ans3: "resp3", ans4:"resp4", correct: "resp1") )
-        category1.append(Question( q:"Prueba 3", ans1: "resp1", ans2: "ans2", ans3: "resp3", ans4:"resp4", correct: "ans2") )
+        category1.append(Question( q:"La tasa de interés nominal es la rentabilidad obtenida en una operación financiera que se capitaliza de forma: ", ans1: "Simple.", ans2: "Compuesta.", ans3: "Ambas son correctas.", ans4:"Ambas son incorrectas.", correct: "Simple") )
+       
+        category1.append(Question( q:"La amortización del capital es:", ans1: "El pago de intereses que realiza la empresa por la deuda adquirida.", ans2: "La extinción de la deuda de la empresa por medio de pagos periódicos.", ans3: "Los pagos periódicos que una empresa hace al tomar una deuda (incluyendo devolución de parte de la plata prestada e intereses).", ans4:"La utilización del dinero prestado por parte de la empresa.", correct: "La extinción de la deuda de la empresa por medio de pagos periódicos.") )
         
-        category2.append(Question( q:"Prueba 1", ans1: "resp1", ans2: "ans2", ans3: "resp3", ans4:"resp4", correct: "resp4") )
-        category2.append(Question( q:"Prueba 2", ans1: "resp1", ans2: "ans2", ans3: "resp3", ans4:"resp4", correct: "resp1") )
-        category2.append(Question( q:"Prueba 3", ans1: "resp1", ans2: "ans2", ans3: "resp3", ans4:"resp4", correct: "ans2") )
+        category1.append(Question( q:"Si se invierten $10000 a una tasa mensual efectiva del 1% con capitalización mensual por cinco meses, sin retirar nunca la plata hasta el mes 5, al cabo del período se obtendrá de ganancia:", ans1: "Más de $500.", ans2: "Menos de $500.", ans3: "Exactamente $500.", ans4:"Ninguna es correcta.", correct: "Más de $500.") )
+        
+        
+        
+        
+        
+        
+        category2.append(Question( q:"¿Qué instrumento financiero es de renta variable?", ans1: "Acciones de empresas", ans2: "LEBACs", ans3: "NOVACs", ans4:"Obligaciones negociables", correct: "Acciones de empresas") )
+        
+        category2.append(Question( q:"¿Qué es la TIR de un bono?", ans1: "El rendimiento del bono.", ans2: "El plazo del bono.", ans3: "El riesgo del bono.", ans4:"El precio del bono.", correct: "El rendimiento del bono.") )
+        
+        category2.append(Question( q:"¿Qué opción de inversión es menos riesgosa?", ans1: "Invertir en varios negocios.", ans2: "Invertir en un solo negocio.", ans3: "Es indiferente.", ans4:"Ambas.", correct: "Invertir en varios negocios.") )
         
     }
     

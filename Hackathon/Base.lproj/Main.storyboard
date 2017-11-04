@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,9 +35,9 @@
                                                         <constraint firstAttribute="height" constant="94" id="Vuc-1k-dJd"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9q-Ar-sOq">
-                                                    <rect key="frame" x="137" y="35" width="91.5" height="43"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9q-Ar-sOq">
+                                                    <rect key="frame" x="137" y="35" width="71.5" height="33.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -411,7 +411,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cQZ-hs-199"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Friends" id="2UU-MM-a0t"/>
+                    <tabBarItem key="tabBarItem" selectedImage="answerWrong" systemItem="mostViewed" id="2UU-MM-a0t"/>
                     <connections>
                         <outlet property="tableView" destination="8kq-Up-zmx" id="Z9f-fu-IfS"/>
                     </connections>
@@ -471,13 +471,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kms-AT-99Z">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="96"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SBO-jy-oxS">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge1" translatesAutoresizingMaskIntoConstraints="NO" id="SBO-jy-oxS">
                                                 <rect key="frame" x="0.0" y="0.0" width="98.5" height="96"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2bX-EF-n3s">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge2" translatesAutoresizingMaskIntoConstraints="NO" id="2bX-EF-n3s">
                                                 <rect key="frame" x="118.5" y="0.0" width="98" height="96"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iqa-Wb-0Nd">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge3" translatesAutoresizingMaskIntoConstraints="NO" id="Iqa-Wb-0Nd">
                                                 <rect key="frame" x="236.5" y="0.0" width="98.5" height="96"/>
                                             </imageView>
                                         </subviews>
@@ -485,13 +485,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OBC-i0-ixd">
                                         <rect key="frame" x="0.0" y="116" width="335" height="96"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aL2-al-Xuk">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge6" translatesAutoresizingMaskIntoConstraints="NO" id="aL2-al-Xuk">
                                                 <rect key="frame" x="0.0" y="0.0" width="98.5" height="96"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pyU-90-yDw">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge5" translatesAutoresizingMaskIntoConstraints="NO" id="pyU-90-yDw">
                                                 <rect key="frame" x="118.5" y="0.0" width="98" height="96"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xdd-FO-WhE">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge4" translatesAutoresizingMaskIntoConstraints="NO" id="Xdd-FO-WhE">
                                                 <rect key="frame" x="236.5" y="0.0" width="98.5" height="96"/>
                                             </imageView>
                                         </subviews>
@@ -499,13 +499,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pap-Y7-Y6f">
                                         <rect key="frame" x="0.0" y="232" width="335" height="96"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JBX-do-c5I">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge7" translatesAutoresizingMaskIntoConstraints="NO" id="JBX-do-c5I">
                                                 <rect key="frame" x="0.0" y="0.0" width="98.5" height="96"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="skZ-Vz-G9K">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge8" translatesAutoresizingMaskIntoConstraints="NO" id="skZ-Vz-G9K">
                                                 <rect key="frame" x="118.5" y="0.0" width="98" height="96"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iaQ-d6-bmq">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge9" translatesAutoresizingMaskIntoConstraints="NO" id="iaQ-d6-bmq">
                                                 <rect key="frame" x="236.5" y="0.0" width="98.5" height="96"/>
                                             </imageView>
                                         </subviews>
@@ -539,11 +539,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeQ-Zs-qMS">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oeQ-Zs-qMS">
                                 <rect key="frame" x="21.5" y="40" width="331" height="236"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="236" id="Bxo-DE-6Jy"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" title="Button" backgroundImage="questionRectangle">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -556,7 +558,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="YkK-KJ-yZW"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Button" backgroundImage="answerRectangle">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -569,7 +571,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="bWa-sv-FMI"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Button" backgroundImage="answerRectangle">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -582,7 +584,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="4kt-N7-z5o"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Button" backgroundImage="answerRectangle">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -595,7 +597,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="Su5-cC-0u6"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Button" backgroundImage="answerRectangle">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -732,7 +734,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XXS-eS-DXd"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="wrx-UA-xhA"/>
+                    <tabBarItem key="tabBarItem" springLoaded="YES" id="wrx-UA-xhA">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vag-g6-oI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -762,7 +766,17 @@
     <resources>
         <image name="Logo" width="375" height="342"/>
         <image name="answerRectangle" width="319" height="64"/>
+        <image name="answerWrong" width="319" height="64"/>
         <image name="background" width="375" height="667"/>
+        <image name="badge1" width="512" height="512"/>
+        <image name="badge2" width="512" height="512"/>
+        <image name="badge3" width="512" height="512"/>
+        <image name="badge4" width="512" height="512"/>
+        <image name="badge5" width="512" height="512"/>
+        <image name="badge6" width="512" height="512"/>
+        <image name="badge7" width="512" height="512"/>
+        <image name="badge8" width="512" height="512"/>
+        <image name="badge9" width="512" height="512"/>
         <image name="people-profile-graphic-design-vector-illustration-eps-63369559" width="105" height="105"/>
         <image name="questionRectangle" width="331" height="248"/>
         <image name="roundedButton" width="298" height="52"/>
