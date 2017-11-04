@@ -22,7 +22,7 @@ class LessonsViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        tableView.rowHeight = CGFloat(110)
+        tableView.rowHeight = CGFloat(170)
     }
     
     //MARK: TableView Delegate
