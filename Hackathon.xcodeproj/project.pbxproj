@@ -20,7 +20,6 @@
 		5BF184BD1FAD94B600F50B15 /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184BC1FAD94B600F50B15 /* LessonsViewController.swift */; };
 		5BF184BF1FAD94D600F50B15 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184BE1FAD94D600F50B15 /* FriendsViewController.swift */; };
 		5BF184C11FAD94E500F50B15 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C01FAD94E500F50B15 /* ProfileViewController.swift */; };
-		5BF184C31FAD953D00F50B15 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C21FAD953D00F50B15 /* GameViewController.swift */; };
 		5BF184C51FAD9AB700F50B15 /* LessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C41FAD9AB700F50B15 /* LessonsTableViewCell.swift */; };
 		5BF184C81FAD9EF000F50B15 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C71FAD9EF000F50B15 /* Lessons.swift */; };
 		5BF184CA1FADB15B00F50B15 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C91FADB15B00F50B15 /* FriendsTableViewCell.swift */; };
@@ -45,7 +44,6 @@
 		5BF184BC1FAD94B600F50B15 /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewController.swift; sourceTree = "<group>"; };
 		5BF184BE1FAD94D600F50B15 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		5BF184C01FAD94E500F50B15 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		5BF184C21FAD953D00F50B15 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5BF184C41FAD9AB700F50B15 /* LessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableViewCell.swift; sourceTree = "<group>"; };
 		5BF184C71FAD9EF000F50B15 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		5BF184C91FADB15B00F50B15 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 				5BF184BC1FAD94B600F50B15 /* LessonsViewController.swift */,
 				5BF184BE1FAD94D600F50B15 /* FriendsViewController.swift */,
 				5BF184C01FAD94E500F50B15 /* ProfileViewController.swift */,
-				5BF184C21FAD953D00F50B15 /* GameViewController.swift */,
 				5BF184C41FAD9AB700F50B15 /* LessonsTableViewCell.swift */,
 				5BF184C91FADB15B00F50B15 /* FriendsTableViewCell.swift */,
 				5B1B78B91FADC6F800019BE4 /* TitlesViewController.swift */,
@@ -232,7 +229,6 @@
 				5B1B78CD1FAE0FD800019BE4 /* ResultsViewController.swift in Sources */,
 				794DFD571FAD688A00390DDC /* AppDelegate.swift in Sources */,
 				5B1B78C91FADFCDF00019BE4 /* QuestionsViewController.swift in Sources */,
-				5BF184C31FAD953D00F50B15 /* GameViewController.swift in Sources */,
 				5B1B78CB1FADFF0D00019BE4 /* DataBase.swift in Sources */,
 				5BF184BA1FAD8F4300F50B15 /* HomeViewController.swift in Sources */,
 				5BF184C81FAD9EF000F50B15 /* Lessons.swift in Sources */,
