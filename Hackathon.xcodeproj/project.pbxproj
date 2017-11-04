@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1B78BA1FADC6F800019BE4 /* TitlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B78B91FADC6F800019BE4 /* TitlesViewController.swift */; };
+		5B1B78BC1FADC98400019BE4 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B78BB1FADC98400019BE4 /* Title.swift */; };
+		5B1B78BE1FADD4F200019BE4 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B78BD1FADD4F200019BE4 /* VideoViewController.swift */; };
+		5B1B78C21FADE98400019BE4 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1B78C01FADE98400019BE4 /* AVKit.framework */; };
+		5B1B78C31FADE98400019BE4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1B78C11FADE98400019BE4 /* AVFoundation.framework */; };
 		5BF184BA1FAD8F4300F50B15 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184B91FAD8F4300F50B15 /* HomeViewController.swift */; };
 		5BF184BD1FAD94B600F50B15 /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184BC1FAD94B600F50B15 /* LessonsViewController.swift */; };
 		5BF184BF1FAD94D600F50B15 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184BE1FAD94D600F50B15 /* FriendsViewController.swift */; };
@@ -23,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B1B78B91FADC6F800019BE4 /* TitlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesViewController.swift; sourceTree = "<group>"; };
+		5B1B78BB1FADC98400019BE4 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		5B1B78BD1FADD4F200019BE4 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		5B1B78C01FADE98400019BE4 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		5B1B78C11FADE98400019BE4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5B1B78C61FADF61B00019BE4 /* Test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test.mp4; sourceTree = "<group>"; };
 		5BF184B91FAD8F4300F50B15 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5BF184BC1FAD94B600F50B15 /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewController.swift; sourceTree = "<group>"; };
 		5BF184BE1FAD94D600F50B15 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
@@ -45,12 +56,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1B78C21FADE98400019BE4 /* AVKit.framework in Frameworks */,
+				5B1B78C31FADE98400019BE4 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B1B78BF1FADE98400019BE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B1B78C11FADE98400019BE4 /* AVFoundation.framework */,
+				5B1B78C01FADE98400019BE4 /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B1B78C51FADF42000019BE4 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				5B1B78C61FADF61B00019BE4 /* Test.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		5BF184BB1FAD8F4B00F50B15 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +91,8 @@
 				5BF184C21FAD953D00F50B15 /* GameViewController.swift */,
 				5BF184C41FAD9AB700F50B15 /* LessonsTableViewCell.swift */,
 				5BF184C91FADB15B00F50B15 /* FriendsTableViewCell.swift */,
+				5B1B78B91FADC6F800019BE4 /* TitlesViewController.swift */,
+				5B1B78BD1FADD4F200019BE4 /* VideoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -70,6 +102,7 @@
 			children = (
 				5BF184C71FAD9EF000F50B15 /* Lessons.swift */,
 				794DFD681FADB78500390DDC /* friends.swift */,
+				5B1B78BB1FADC98400019BE4 /* Title.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,6 +112,7 @@
 			children = (
 				794DFD551FAD688A00390DDC /* Hackathon */,
 				794DFD541FAD688A00390DDC /* Products */,
+				5B1B78BF1FADE98400019BE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +133,7 @@
 				794DFD5A1FAD688A00390DDC /* Main.storyboard */,
 				794DFD5D1FAD688A00390DDC /* Assets.xcassets */,
 				794DFD5F1FAD688A00390DDC /* LaunchScreen.storyboard */,
+				5B1B78C51FADF42000019BE4 /* Videos */,
 				794DFD621FAD688A00390DDC /* Info.plist */,
 			);
 			path = Hackathon;
@@ -176,16 +211,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1B78BC1FADC98400019BE4 /* Title.swift in Sources */,
 				5BF184CA1FADB15B00F50B15 /* FriendsTableViewCell.swift in Sources */,
 				5BF184C51FAD9AB700F50B15 /* LessonsTableViewCell.swift in Sources */,
 				5BF184BF1FAD94D600F50B15 /* FriendsViewController.swift in Sources */,
 				5BF184BD1FAD94B600F50B15 /* LessonsViewController.swift in Sources */,
+				5B1B78BE1FADD4F200019BE4 /* VideoViewController.swift in Sources */,
 				5BF184C11FAD94E500F50B15 /* ProfileViewController.swift in Sources */,
 				794DFD571FAD688A00390DDC /* AppDelegate.swift in Sources */,
 				5BF184C31FAD953D00F50B15 /* GameViewController.swift in Sources */,
 				5BF184BA1FAD8F4300F50B15 /* HomeViewController.swift in Sources */,
 				5BF184C81FAD9EF000F50B15 /* Lessons.swift in Sources */,
 				794DFD691FADB78500390DDC /* friends.swift in Sources */,
+				5B1B78BA1FADC6F800019BE4 /* TitlesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,10 +26,15 @@ class Lessons {
     
     
     init() {
-        allLessons.append(Lesson(image: UIImage(named: "bond")!,title: "Bonos",percentage: 60,color: UIColorFromRGB(rgbValue: 0x44CBF3)))
-        allLessons.append(Lesson(image: UIImage(named: "caculator")!,title: "Matemáticas",percentage: 60,color: UIColorFromRGB(rgbValue: 0xFF8B36)))
-        allLessons.append(Lesson(image: UIImage(named: "moneyBag")!,title: "Finanzas",percentage: 60,color: UIColorFromRGB(rgbValue: 0xFFCA4D)))
-        allLessons.append(Lesson(image: UIImage(named: "people1")!,title: "Titulo",percentage: 60,color: UIColorFromRGB(rgbValue: 0x794AFF)))
+        var titles = [Title]()
+        titles.append(Title("Hola"))
+        titles.append(Title("Hola"))
+        titles.append(Title("Cahu"))
+        
+        allLessons.append(Lesson(image: UIImage(named: "bond")!,title: "Bonos",percentage: 60,color: UIColorFromRGB(rgbValue: 0x44CBF3),titles: titles))
+        allLessons.append(Lesson(image: UIImage(named: "caculator")!,title: "Matemáticas",percentage: 60,color: UIColorFromRGB(rgbValue: 0xFF8B36),titles: titles))
+        allLessons.append(Lesson(image: UIImage(named: "moneyBag")!,title: "Finanzas",percentage: 60,color: UIColorFromRGB(rgbValue: 0xFFCA4D),titles: titles))
+        allLessons.append(Lesson(image: UIImage(named: "people1")!,title: "Titulo",percentage: 60,color: UIColorFromRGB(rgbValue: 0x794AFF),titles: titles))
         
     }
     
@@ -42,11 +47,13 @@ class Lesson {
     let title: String
     let percentage: Int
     let color: UIColor
+    let titles: [Title]
     
-    init(image: UIImage, title: String, percentage: Int, color: UIColor) {
+    init(image: UIImage, title: String, percentage: Int, color: UIColor, titles: [Title]) {
         self.image = image
         self.title = title
         self.percentage = percentage
         self.color = color
+        self.titles = titles
     }
 }

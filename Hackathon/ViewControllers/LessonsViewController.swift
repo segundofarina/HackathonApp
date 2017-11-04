@@ -43,6 +43,19 @@ class LessonsViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "titlesSegue" {
+            let titlesVC = segue.destination as! TitlesViewController
+            let rowSelected = self.tableView.indexPathForSelectedRow
+            titlesVC.titles = allLessons[(rowSelected?.row)!].titles
+            titlesVC.navigationTitle = allLessons[(rowSelected?.row)!].title
+        }
+    }
 
     
 }

@@ -32,6 +32,8 @@ class FriendsViewController: UIViewController, UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "friendsCell", for: indexPath) as! FriendsTableViewCell
         let friend = allFriends[indexPath.row]
         
+        cell.selectionStyle = .none
+        
         cell.friendImage.image = friend.image
         cell.friendName.text = friend.title
         cell.friendPoints.text = "\(friend.points)"
