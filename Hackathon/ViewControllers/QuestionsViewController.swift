@@ -2,7 +2,7 @@
 //  QuestionsViewController.swift
 //  Hackathon
 //
-//  Created by Segundo Fariña on 4/11/17.
+//  Created by Martin Victory on 4/11/17.
 //  Copyright © 2017 Segundo Fariña. All rights reserved.
 //
 
@@ -10,26 +10,94 @@ import UIKit
 
 class QuestionsViewController: UIViewController {
 
+    var lessons: String?
+    var db: DataBase?
+    var q: Question?
+    
+    var points: Int = 0
+    
+    @IBOutlet weak var question: UIButton!
+    @IBOutlet weak var ans1: UIButton!
+    @IBOutlet weak var ans2: UIButton!
+    @IBOutlet weak var ans3: UIButton!
+    @IBOutlet weak var ans4: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        db = DataBase()
+        
+        if lessons == "Lesson1" {
+            q = db?.nextCategory1()
+        } else {
+           q = db?.nextCategory2()
+        }
+        //Manejar nulls
+        question.setTitle(q!.q, for: .normal)
+        ans1.setTitle(q!.ans1, for: .normal)
+        ans2.setTitle(q!.ans2, for: .normal)
+        ans3.setTitle(q!.ans3, for: .normal)
+        ans4.setTitle(q!.ans4, for: .normal)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnPressed(_ sender: UIButton) {
+        
+        //
+        
+        if sender.titleLabel?.text == q?.correct {
+            //Mostrar verde
+            sender.setBackgroundImage(UIImage(named:"answerCorrect")!, for: .normal)
+            points += 10
+        } else {
+            //Mostrar rojo
+            sender.setBackgroundImage(UIImage(named:"answerWrong")!, for: .normal)
+        }
+        
+        //updateUI
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+            self.updateUI()
+        })
+        
+        
     }
-    */
-
+    
+    func updateUI() {
+        if lessons == "Lesson1" {
+            q = db?.nextCategory1()
+        } else {
+            q = db?.nextCategory2()
+        }
+        //Manejar nulls
+        if q == nil {
+            //segue
+            
+            let storyboard = UIStoryboard (name: "Main", bundle: nil)
+            let resultVC = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultsViewController
+            
+            // Communicate the match to the ResultViewController
+            resultVC.points = points
+            
+            self.present(resultVC, animated: true, completion: nil)
+            
+            return
+        }
+        
+        ans1.setBackgroundImage(UIImage(named:"answerRectangle")!, for: .normal)
+        ans2.setBackgroundImage(UIImage(named:"answerRectangle")!, for: .normal)
+        ans3.setBackgroundImage(UIImage(named:"answerRectangle")!, for: .normal)
+        ans4.setBackgroundImage(UIImage(named:"answerRectangle")!, for: .normal)
+        
+        
+        question.setTitle(q!.q, for: .normal)
+        ans1.setTitle(q!.ans1, for: .normal)
+        ans2.setTitle(q!.ans2, for: .normal)
+        ans3.setTitle(q!.ans3, for: .normal)
+        ans4.setTitle(q!.ans4, for: .normal)
+    }
+    
 }

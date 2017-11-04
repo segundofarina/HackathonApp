@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -527,6 +527,9 @@
                                         <state key="normal" title="Button" backgroundImage="answerRectangle">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="wmF-kZ-ZDX" eventType="touchUpInside" id="Tuk-Gv-NuR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZO-kQ-qzE">
                                         <rect key="frame" x="0.0" y="76" width="319" height="56"/>
@@ -537,6 +540,9 @@
                                         <state key="normal" title="Button" backgroundImage="answerRectangle">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="wmF-kZ-ZDX" eventType="touchUpInside" id="ngK-mL-8Pb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9p-r9-Sr5">
                                         <rect key="frame" x="0.0" y="152" width="319" height="56"/>
@@ -547,6 +553,9 @@
                                         <state key="normal" title="Button" backgroundImage="answerRectangle">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="wmF-kZ-ZDX" eventType="touchUpInside" id="sZr-QK-Fht"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWg-Wl-oXo">
                                         <rect key="frame" x="0.0" y="228" width="319" height="56"/>
@@ -557,6 +566,9 @@
                                         <state key="normal" title="Button" backgroundImage="answerRectangle">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="wmF-kZ-ZDX" eventType="touchUpInside" id="5wc-ym-yNJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -570,6 +582,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Wv-ok-cEn"/>
                     </view>
+                    <connections>
+                        <outlet property="ans1" destination="i3V-DP-zPO" id="skZ-WU-XZ8"/>
+                        <outlet property="ans2" destination="FZO-kQ-qzE" id="qx1-ZX-XYb"/>
+                        <outlet property="ans3" destination="N9p-r9-Sr5" id="ivK-Y6-iAP"/>
+                        <outlet property="ans4" destination="MWg-Wl-oXo" id="DhY-iP-XMv"/>
+                        <outlet property="question" destination="oeQ-Zs-qMS" id="lk9-kl-y1c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFd-lg-Sdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

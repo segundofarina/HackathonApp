@@ -58,6 +58,12 @@ class TitlesViewController: UIViewController, UITableViewDelegate, UITableViewDa
             videoVC.text = titles[(rowSelected?.row)!].text
             videoVC.navbarTitle = titles[(rowSelected?.row)!].title
         }
+        
+        if segue.identifier == "startQuizSegue" {
+            let quizVC = segue.destination as! QuestionsViewController
+            let lesson = navigationTitle
+            quizVC.lessons = lesson
+        }
     }
     
 }
