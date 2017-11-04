@@ -233,25 +233,10 @@
             </objects>
             <point key="canvasLocation" x="2424.8000000000002" y="-186.65667166416793"/>
         </scene>
-        <!--Game-->
-        <scene sceneID="QDV-hd-xYZ">
-            <objects>
-                <viewController title="Game" id="ZUV-gf-1d6" customClass="GameViewController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NVW-EI-pzw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="QLx-cV-TH4"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bes-w1-cc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2905" y="-903"/>
-        </scene>
-        <!--Answer-->
+        <!--ResultViewController-->
         <scene sceneID="rWe-ek-OaH">
             <objects>
-                <viewController title="Answer" id="gRp-wm-Oc9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" title="ResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gRp-wm-Oc9" customClass="ResultsViewController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vy4-cG-Otv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,20 +244,68 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="KOW-P5-FcC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people-profile-graphic-design-vector-illustration-eps-63369559" translatesAutoresizingMaskIntoConstraints="NO" id="teb-LZ-bAb">
+                                <rect key="frame" x="112" y="152" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Iwu-a4-zHG"/>
+                                    <constraint firstAttribute="height" constant="150" id="dJs-aD-Lc6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0k-Aw-MVo">
+                                <rect key="frame" x="191" y="342" width="112" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="33"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ae-G9-YYt">
+                                <rect key="frame" x="77" y="331" width="111" height="59"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lun-Eo-N43">
+                                <rect key="frame" x="38.5" y="572" width="298" height="65"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ResultsViewController"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="CSo-nA-aiP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Back to Lessons" backgroundImage="roundedButton">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtn:" destination="gRp-wm-Oc9" eventType="touchUpInside" id="00C-9t-YU0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GDt-g3-GOb" firstAttribute="trailing" secondItem="teb-LZ-bAb" secondAttribute="trailing" constant="113" id="1ag-ve-Zum"/>
                             <constraint firstItem="KOW-P5-FcC" firstAttribute="leading" secondItem="GDt-g3-GOb" secondAttribute="leading" id="5kH-SO-Bw9"/>
                             <constraint firstItem="GDt-g3-GOb" firstAttribute="trailing" secondItem="KOW-P5-FcC" secondAttribute="trailing" id="7xS-aZ-wkE"/>
                             <constraint firstItem="KOW-P5-FcC" firstAttribute="top" secondItem="Vy4-cG-Otv" secondAttribute="top" id="HZP-Re-56p"/>
+                            <constraint firstItem="2Ae-G9-YYt" firstAttribute="leading" secondItem="GDt-g3-GOb" secondAttribute="leading" constant="77" id="Jmr-L3-Vya"/>
+                            <constraint firstItem="GDt-g3-GOb" firstAttribute="trailing" secondItem="k0k-Aw-MVo" secondAttribute="trailing" constant="72" id="L6k-ix-hBm"/>
+                            <constraint firstItem="k0k-Aw-MVo" firstAttribute="top" secondItem="GDt-g3-GOb" secondAttribute="top" constant="322" id="Ppk-gk-m9H"/>
+                            <constraint firstItem="teb-LZ-bAb" firstAttribute="top" secondItem="GDt-g3-GOb" secondAttribute="top" constant="132" id="TdW-5Y-bYF"/>
                             <constraint firstItem="GDt-g3-GOb" firstAttribute="bottom" secondItem="KOW-P5-FcC" secondAttribute="bottom" id="Uc6-ok-Wim"/>
+                            <constraint firstItem="k0k-Aw-MVo" firstAttribute="leading" secondItem="GDt-g3-GOb" secondAttribute="leading" constant="191" id="eeu-gE-MQw"/>
+                            <constraint firstItem="GDt-g3-GOb" firstAttribute="trailing" secondItem="2Ae-G9-YYt" secondAttribute="trailing" constant="187" id="fNm-Zc-T7I"/>
+                            <constraint firstItem="GDt-g3-GOb" firstAttribute="bottom" secondItem="2Ae-G9-YYt" secondAttribute="bottom" constant="277" id="kVW-0F-E8i"/>
+                            <constraint firstItem="2Ae-G9-YYt" firstAttribute="top" secondItem="GDt-g3-GOb" secondAttribute="top" constant="311" id="nfd-9B-z1W"/>
+                            <constraint firstItem="teb-LZ-bAb" firstAttribute="leading" secondItem="GDt-g3-GOb" secondAttribute="leading" constant="112" id="rIN-Cb-j2W"/>
+                            <constraint firstAttribute="bottom" secondItem="Lun-Eo-N43" secondAttribute="bottom" constant="30" id="vAD-Sf-doH"/>
+                            <constraint firstItem="Lun-Eo-N43" firstAttribute="centerX" secondItem="GDt-g3-GOb" secondAttribute="centerX" id="xL1-yN-IRq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GDt-g3-GOb"/>
                     </view>
+                    <connections>
+                        <outlet property="pointsLabel" destination="2Ae-G9-YYt" id="H3e-VT-4s5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XyG-7S-SdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3714" y="-902"/>
+            <point key="canvasLocation" x="2677.5999999999999" y="1102.3988005997003"/>
         </scene>
         <!--Friends-->
         <scene sceneID="DFp-JM-N5a">
@@ -501,7 +534,7 @@
         <!--Questions View Controller-->
         <scene sceneID="ajB-YW-KRI">
             <objects>
-                <viewController id="wmF-kZ-ZDX" customClass="QuestionsViewController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wmF-kZ-ZDX" customClass="QuestionsViewController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ri8-jV-wls">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

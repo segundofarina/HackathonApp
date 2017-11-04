@@ -28,8 +28,17 @@ class QuestionsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    var backFromResult = false
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if backFromResult {
+            print("acaaaa")
+            dismiss(animated: false, completion: nil)
+        }
+        
+        
+        
         db = DataBase()
         
         if lessons == "Lesson1" {
@@ -46,8 +55,6 @@ class QuestionsViewController: UIViewController {
     }
     
     @IBAction func btnPressed(_ sender: UIButton) {
-        
-        //
         
         if sender.titleLabel?.text == q?.correct {
             //Mostrar verde
@@ -79,11 +86,14 @@ class QuestionsViewController: UIViewController {
             let storyboard = UIStoryboard (name: "Main", bundle: nil)
             let resultVC = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultsViewController
             
-            // Communicate the match to the ResultViewController
             resultVC.points = points
             
+            resultVC.setUp {
+                
+                self.dismiss(animated: false)
+            }
             self.present(resultVC, animated: true, completion: nil)
-            
+ 
             return
         }
         
@@ -98,6 +108,11 @@ class QuestionsViewController: UIViewController {
         ans2.setTitle(q!.ans2, for: .normal)
         ans3.setTitle(q!.ans3, for: .normal)
         ans4.setTitle(q!.ans4, for: .normal)
+    }
+    
+    
+    func backResult()  {
+        backFromResult = true
     }
     
 }
