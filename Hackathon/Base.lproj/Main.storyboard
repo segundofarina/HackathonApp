@@ -187,16 +187,16 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Ma3-Bm-pTk"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="Logo"/>
+                                <state key="normal" backgroundImage="Group 2"/>
                                 <connections>
                                     <action selector="playVideo:" destination="LW2-Mu-0K0" eventType="touchUpInside" id="ec3-9M-XPd"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gLP-AI-Geq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLP-AI-Geq">
                                 <rect key="frame" x="20" y="308" width="335" height="339"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -761,6 +761,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Group 2" width="375" height="260"/>
         <image name="Logo" width="375" height="342"/>
         <image name="answerRectangle" width="319" height="64"/>
         <image name="background" width="375" height="667"/>

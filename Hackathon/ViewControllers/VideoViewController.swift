@@ -39,6 +39,7 @@ class VideoViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         textView.text = text
+        //textView.font.set
         self.navBar.topItem?.title = navbarTitle
     }
 

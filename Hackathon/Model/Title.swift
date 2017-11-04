@@ -13,9 +13,9 @@ class Title {
     let video: String!
     let text: String!
     
-    init(_ title: String) {
+    init(_ title: String, video: String, text: String) {
         self.title = title
-        self.video = Bundle.main.path(forResource: "Test", ofType: ".mp4")
-        self.text = "text"
+        self.video = Bundle.main.path(forResource: video, ofType: ".mp4")
+        self.text = text
     }
 }
