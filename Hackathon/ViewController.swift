@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+         var martin = false
+        if martin == false{
+            print("hello")
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
