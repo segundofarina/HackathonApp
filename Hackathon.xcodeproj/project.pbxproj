@@ -7,17 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BF184BA1FAD8F4300F50B15 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184B91FAD8F4300F50B15 /* HomeViewController.swift */; };
+		5BF184BD1FAD94B600F50B15 /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184BC1FAD94B600F50B15 /* LessonsViewController.swift */; };
+		5BF184BF1FAD94D600F50B15 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184BE1FAD94D600F50B15 /* FriendsViewController.swift */; };
+		5BF184C11FAD94E500F50B15 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C01FAD94E500F50B15 /* ProfileViewController.swift */; };
+		5BF184C31FAD953D00F50B15 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C21FAD953D00F50B15 /* GameViewController.swift */; };
+		5BF184C51FAD9AB700F50B15 /* LessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C41FAD9AB700F50B15 /* LessonsTableViewCell.swift */; };
+		5BF184C81FAD9EF000F50B15 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C71FAD9EF000F50B15 /* Lessons.swift */; };
 		794DFD571FAD688A00390DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DFD561FAD688A00390DDC /* AppDelegate.swift */; };
-		794DFD591FAD688A00390DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DFD581FAD688A00390DDC /* ViewController.swift */; };
 		794DFD5C1FAD688A00390DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794DFD5A1FAD688A00390DDC /* Main.storyboard */; };
 		794DFD5E1FAD688A00390DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794DFD5D1FAD688A00390DDC /* Assets.xcassets */; };
 		794DFD611FAD688A00390DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794DFD5F1FAD688A00390DDC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BF184B91FAD8F4300F50B15 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5BF184BC1FAD94B600F50B15 /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewController.swift; sourceTree = "<group>"; };
+		5BF184BE1FAD94D600F50B15 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		5BF184C01FAD94E500F50B15 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5BF184C21FAD953D00F50B15 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5BF184C41FAD9AB700F50B15 /* LessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableViewCell.swift; sourceTree = "<group>"; };
+		5BF184C71FAD9EF000F50B15 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		794DFD531FAD688A00390DDC /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794DFD561FAD688A00390DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		794DFD581FAD688A00390DDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		794DFD5B1FAD688A00390DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		794DFD5D1FAD688A00390DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		794DFD601FAD688A00390DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +47,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BF184BB1FAD8F4B00F50B15 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BF184B91FAD8F4300F50B15 /* HomeViewController.swift */,
+				5BF184BC1FAD94B600F50B15 /* LessonsViewController.swift */,
+				5BF184BE1FAD94D600F50B15 /* FriendsViewController.swift */,
+				5BF184C01FAD94E500F50B15 /* ProfileViewController.swift */,
+				5BF184C21FAD953D00F50B15 /* GameViewController.swift */,
+				5BF184C41FAD9AB700F50B15 /* LessonsTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5BF184C61FAD9E9000F50B15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BF184C71FAD9EF000F50B15 /* Lessons.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		794DFD4A1FAD688A00390DDC = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +87,9 @@
 		794DFD551FAD688A00390DDC /* Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				5BF184C61FAD9E9000F50B15 /* Model */,
+				5BF184BB1FAD8F4B00F50B15 /* ViewControllers */,
 				794DFD561FAD688A00390DDC /* AppDelegate.swift */,
-				794DFD581FAD688A00390DDC /* ViewController.swift */,
 				794DFD5A1FAD688A00390DDC /* Main.storyboard */,
 				794DFD5D1FAD688A00390DDC /* Assets.xcassets */,
 				794DFD5F1FAD688A00390DDC /* LaunchScreen.storyboard */,
@@ -136,8 +170,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				794DFD591FAD688A00390DDC /* ViewController.swift in Sources */,
+				5BF184C51FAD9AB700F50B15 /* LessonsTableViewCell.swift in Sources */,
+				5BF184BF1FAD94D600F50B15 /* FriendsViewController.swift in Sources */,
+				5BF184BD1FAD94B600F50B15 /* LessonsViewController.swift in Sources */,
+				5BF184C11FAD94E500F50B15 /* ProfileViewController.swift in Sources */,
 				794DFD571FAD688A00390DDC /* AppDelegate.swift in Sources */,
+				5BF184C31FAD953D00F50B15 /* GameViewController.swift in Sources */,
+				5BF184BA1FAD8F4300F50B15 /* HomeViewController.swift in Sources */,
+				5BF184C81FAD9EF000F50B15 /* Lessons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
