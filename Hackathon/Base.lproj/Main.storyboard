@@ -476,6 +476,7 @@
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge2" translatesAutoresizingMaskIntoConstraints="NO" id="2bX-EF-n3s">
                                                 <rect key="frame" x="118.5" y="0.0" width="98" height="96"/>
+                                                <color key="tintColor" red="0.26754838197969544" green="0.26754838197969544" blue="0.26754838197969544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge3" translatesAutoresizingMaskIntoConstraints="NO" id="Iqa-Wb-0Nd">
                                                 <rect key="frame" x="236.5" y="0.0" width="98.5" height="96"/>
@@ -488,10 +489,10 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge6" translatesAutoresizingMaskIntoConstraints="NO" id="aL2-al-Xuk">
                                                 <rect key="frame" x="0.0" y="0.0" width="98.5" height="96"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge5" translatesAutoresizingMaskIntoConstraints="NO" id="pyU-90-yDw">
+                                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge5" translatesAutoresizingMaskIntoConstraints="NO" id="pyU-90-yDw">
                                                 <rect key="frame" x="118.5" y="0.0" width="98" height="96"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge4" translatesAutoresizingMaskIntoConstraints="NO" id="Xdd-FO-WhE">
+                                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge4" translatesAutoresizingMaskIntoConstraints="NO" id="Xdd-FO-WhE">
                                                 <rect key="frame" x="236.5" y="0.0" width="98.5" height="96"/>
                                             </imageView>
                                         </subviews>
@@ -499,13 +500,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pap-Y7-Y6f">
                                         <rect key="frame" x="0.0" y="232" width="335" height="96"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge7" translatesAutoresizingMaskIntoConstraints="NO" id="JBX-do-c5I">
+                                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge7" translatesAutoresizingMaskIntoConstraints="NO" id="JBX-do-c5I">
                                                 <rect key="frame" x="0.0" y="0.0" width="98.5" height="96"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge8" translatesAutoresizingMaskIntoConstraints="NO" id="skZ-Vz-G9K">
                                                 <rect key="frame" x="118.5" y="0.0" width="98" height="96"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge9" translatesAutoresizingMaskIntoConstraints="NO" id="iaQ-d6-bmq">
+                                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge9" translatesAutoresizingMaskIntoConstraints="NO" id="iaQ-d6-bmq">
                                                 <rect key="frame" x="236.5" y="0.0" width="98.5" height="96"/>
                                             </imageView>
                                         </subviews>
