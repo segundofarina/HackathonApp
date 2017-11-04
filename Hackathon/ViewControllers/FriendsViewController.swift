@@ -33,9 +33,10 @@ class FriendsViewController: UIViewController, UITableViewDataSource, UITableVie
         let friend = allFriends[indexPath.row]
         
         cell.friendImage.image = friend.image
-        cell.friendName.text = friend.text
-        cell.friendPoints.text = friend.points
+        cell.friendName.text = friend.title
+        cell.friendPoints.text = "\(friend.points)"
         
+        return cell
     }
 
 }
