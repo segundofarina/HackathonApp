@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,9 +17,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Olf-e9-sqq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="626"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lessonsImg" translatesAutoresizingMaskIntoConstraints="NO" id="fHC-xL-AHs">
+                                        <rect key="frame" x="67" y="50" width="240" height="128"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="BdB-Z7-dMq"/>
+                                            <constraint firstAttribute="width" constant="240" id="V3a-H2-usU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LESSONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXD-16-Hes">
+                                        <rect key="frame" x="147" y="184" width="81" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.73333333329999995" green="0.27279136722836739" blue="0.70402021826198802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ZXD-16-Hes" firstAttribute="top" secondItem="fHC-xL-AHs" secondAttribute="bottom" constant="6" id="CaR-eN-VFS"/>
+                                    <constraint firstItem="fHC-xL-AHs" firstAttribute="centerX" secondItem="Olf-e9-sqq" secondAttribute="centerX" id="EVC-O2-5FT"/>
+                                    <constraint firstItem="ZXD-16-Hes" firstAttribute="centerX" secondItem="Olf-e9-sqq" secondAttribute="centerX" id="JKf-pR-w32"/>
+                                    <constraint firstItem="fHC-xL-AHs" firstAttribute="top" secondItem="Olf-e9-sqq" secondAttribute="top" constant="50" id="X5Y-9B-oDh"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8wz-Jz-nUh">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="270" width="375" height="450"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="bic-Wm-uoc"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="lessonCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonCell" rowHeight="170" id="new-ZW-10Z" customClass="LessonsTableViewCell" customModule="Hackathon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="170"/>
@@ -35,8 +64,8 @@
                                                         <constraint firstAttribute="height" constant="94" id="Vuc-1k-dJd"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9q-Ar-sOq">
-                                                    <rect key="frame" x="137" y="35" width="71.5" height="33.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9q-Ar-sOq">
+                                                    <rect key="frame" x="137" y="35" width="72" height="34"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -62,10 +91,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8wz-Jz-nUh" firstAttribute="top" secondItem="uai-61-wcY" secondAttribute="top" id="2lk-u6-9LH"/>
-                            <constraint firstItem="8wz-Jz-nUh" firstAttribute="leading" secondItem="uai-61-wcY" secondAttribute="leading" id="5Wg-dQ-C1f"/>
-                            <constraint firstItem="uai-61-wcY" firstAttribute="trailing" secondItem="8wz-Jz-nUh" secondAttribute="trailing" id="Pli-i7-fc5"/>
-                            <constraint firstItem="uai-61-wcY" firstAttribute="bottom" secondItem="8wz-Jz-nUh" secondAttribute="bottom" id="vOo-or-KPE"/>
+                            <constraint firstItem="Olf-e9-sqq" firstAttribute="top" secondItem="uai-61-wcY" secondAttribute="top" id="3M1-1Q-M4M"/>
+                            <constraint firstItem="8wz-Jz-nUh" firstAttribute="leading" secondItem="uai-61-wcY" secondAttribute="leading" id="K62-GZ-LWe"/>
+                            <constraint firstAttribute="trailing" secondItem="Olf-e9-sqq" secondAttribute="trailing" id="LB5-ma-sXo"/>
+                            <constraint firstItem="Olf-e9-sqq" firstAttribute="centerY" secondItem="pUT-tN-cjP" secondAttribute="centerY" id="Lsc-FS-v4H"/>
+                            <constraint firstItem="Olf-e9-sqq" firstAttribute="trailing" secondItem="8wz-Jz-nUh" secondAttribute="trailing" id="M1k-ph-Fg1"/>
+                            <constraint firstItem="Olf-e9-sqq" firstAttribute="leading" secondItem="uai-61-wcY" secondAttribute="leading" id="Tmf-Ud-mWN"/>
+                            <constraint firstItem="8wz-Jz-nUh" firstAttribute="top" secondItem="uai-61-wcY" secondAttribute="top" constant="250" id="U8S-nm-qvM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uai-61-wcY"/>
                     </view>
@@ -774,6 +806,7 @@
         <image name="badge8" width="512" height="512"/>
         <image name="badge9" width="512" height="512"/>
         <image name="home" width="25" height="25"/>
+        <image name="lessonsImg" width="512" height="512"/>
         <image name="man-user" width="25" height="25"/>
         <image name="moneyBag" width="74" height="80"/>
         <image name="multiple-users" width="25" height="25"/>
