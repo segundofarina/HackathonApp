@@ -189,7 +189,7 @@
                                 <rect key="frame" x="0.0" y="260" width="375" height="358"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="qeN-Vu-Vye">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendsCell" rowHeight="97" id="qeN-Vu-Vye" customClass="FriendsTableViewCell" customModule="Hackathon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qeN-Vu-Vye" id="mzW-aI-2y1">
@@ -234,6 +234,11 @@
                                                 <constraint firstItem="rRH-Cy-NX9" firstAttribute="top" secondItem="mzW-aI-2y1" secondAttribute="top" id="Ro5-lV-Pi3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="friendImage" destination="OaJ-3J-Emr" id="qaV-Se-9AN"/>
+                                            <outlet property="friendName" destination="NIk-wA-aK2" id="cw1-yC-YVs"/>
+                                            <outlet property="friendPoints" destination="ggo-a2-UhB" id="dYo-We-ZAy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -251,6 +256,9 @@
                         <viewLayoutGuide key="safeArea" id="cQZ-hs-199"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Friends" id="2UU-MM-a0t"/>
+                    <connections>
+                        <outlet property="tableView" destination="8kq-Up-zmx" id="Z9f-fu-IfS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEp-sX-Q2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
