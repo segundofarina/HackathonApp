@@ -20,6 +20,7 @@
 		794DFD5E1FAD688A00390DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794DFD5D1FAD688A00390DDC /* Assets.xcassets */; };
 		794DFD611FAD688A00390DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794DFD5F1FAD688A00390DDC /* LaunchScreen.storyboard */; };
 		794DFD691FADB78500390DDC /* friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DFD681FADB78500390DDC /* friends.swift */; };
+		794DFD6B1FADC70A00390DDC /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DFD6A1FADC70A00390DDC /* Questions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		794DFD601FAD688A00390DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		794DFD621FAD688A00390DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794DFD681FADB78500390DDC /* friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friends.swift; sourceTree = "<group>"; };
+		794DFD6A1FADC70A00390DDC /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				5BF184C71FAD9EF000F50B15 /* Lessons.swift */,
 				794DFD681FADB78500390DDC /* friends.swift */,
+				794DFD6A1FADC70A00390DDC /* Questions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				5BF184BD1FAD94B600F50B15 /* LessonsViewController.swift in Sources */,
 				5BF184C11FAD94E500F50B15 /* ProfileViewController.swift in Sources */,
 				794DFD571FAD688A00390DDC /* AppDelegate.swift in Sources */,
+				794DFD6B1FADC70A00390DDC /* Questions.swift in Sources */,
 				5BF184C31FAD953D00F50B15 /* GameViewController.swift in Sources */,
 				5BF184BA1FAD8F4300F50B15 /* HomeViewController.swift in Sources */,
 				5BF184C81FAD9EF000F50B15 /* Lessons.swift in Sources */,
