@@ -268,7 +268,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-fq-OJE">
                                 <rect key="frame" x="0.0" y="20" width="375" height="230"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people1" translatesAutoresizingMaskIntoConstraints="NO" id="SpI-kv-YJt">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people-profile-graphic-design-vector-illustration-eps-63369559" translatesAutoresizingMaskIntoConstraints="NO" id="SpI-kv-YJt">
                                         <rect key="frame" x="112.5" y="30" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="UkO-xo-DrA"/>
@@ -506,7 +506,7 @@
     <resources>
         <image name="Logo" width="375" height="342"/>
         <image name="background" width="375" height="667"/>
-        <image name="people1" width="104" height="104"/>
+        <image name="people-profile-graphic-design-vector-illustration-eps-63369559" width="105" height="105"/>
         <image name="roundedButton" width="298" height="52"/>
         <image name="trophy" width="151" height="159"/>
     </resources>
