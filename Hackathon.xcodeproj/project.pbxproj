@@ -26,6 +26,7 @@
 		794DFD611FAD688A00390DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794DFD5F1FAD688A00390DDC /* LaunchScreen.storyboard */; };
 		794DFD691FADB78500390DDC /* friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DFD681FADB78500390DDC /* friends.swift */; };
 		794DFD6B1FADC70A00390DDC /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DFD6A1FADC70A00390DDC /* Questions.swift */; };
+		794DFD6E1FADF95F00390DDC /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DFD6D1FADF95F00390DDC /* QuestionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		794DFD621FAD688A00390DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		794DFD681FADB78500390DDC /* friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friends.swift; sourceTree = "<group>"; };
 		794DFD6A1FADC70A00390DDC /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		794DFD6D1FADF95F00390DDC /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				5BF184C91FADB15B00F50B15 /* FriendsTableViewCell.swift */,
 				5B1B78B91FADC6F800019BE4 /* TitlesViewController.swift */,
 				5B1B78BD1FADD4F200019BE4 /* VideoViewController.swift */,
+				794DFD6D1FADF95F00390DDC /* QuestionsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -115,6 +118,7 @@
 				794DFD551FAD688A00390DDC /* Hackathon */,
 				794DFD541FAD688A00390DDC /* Products */,
 				5B1B78BF1FADE98400019BE4 /* Frameworks */,
+				794DFD6C1FADF73400390DDC /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +143,14 @@
 				794DFD621FAD688A00390DDC /* Info.plist */,
 			);
 			path = Hackathon;
+			sourceTree = "<group>";
+		};
+		794DFD6C1FADF73400390DDC /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				794DFD6A1FADC70A00390DDC /* Questions.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +236,7 @@
 				794DFD6B1FADC70A00390DDC /* Questions.swift in Sources */,
 				5BF184C31FAD953D00F50B15 /* GameViewController.swift in Sources */,
 				5BF184BA1FAD8F4300F50B15 /* HomeViewController.swift in Sources */,
+				794DFD6E1FADF95F00390DDC /* QuestionsViewController.swift in Sources */,
 				5BF184C81FAD9EF000F50B15 /* Lessons.swift in Sources */,
 				794DFD691FADB78500390DDC /* friends.swift in Sources */,
 				5B1B78BA1FADC6F800019BE4 /* TitlesViewController.swift in Sources */,

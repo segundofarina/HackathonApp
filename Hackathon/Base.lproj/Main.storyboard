@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -141,6 +141,9 @@
                                 <state key="normal" title="Start Quiz" backgroundImage="startQuizRectangle">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wmF-kZ-ZDX" kind="presentation" identifier="startQuizSegue" id="ir5-Xz-6pt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -495,10 +498,10 @@
             </objects>
             <point key="canvasLocation" x="582" y="1285"/>
         </scene>
-        <!--View Controller-->
+        <!--Questions View Controller-->
         <scene sceneID="ajB-YW-KRI">
             <objects>
-                <viewController id="wmF-kZ-ZDX" sceneMemberID="viewController">
+                <viewController id="wmF-kZ-ZDX" customClass="QuestionsViewController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ri8-jV-wls">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
