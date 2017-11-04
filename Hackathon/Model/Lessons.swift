@@ -31,10 +31,10 @@ class Lessons {
         titles.append(Title("Hola"))
         titles.append(Title("Cahu"))
         
-        allLessons.append(Lesson(image: UIImage(named: "bond")!,title: "Bonos",percentage: 60,color: UIColorFromRGB(rgbValue: 0x44CBF3),titles: titles))
-        allLessons.append(Lesson(image: UIImage(named: "caculator")!,title: "Matemáticas",percentage: 60,color: UIColorFromRGB(rgbValue: 0xFF8B36),titles: titles))
-        allLessons.append(Lesson(image: UIImage(named: "moneyBag")!,title: "Finanzas",percentage: 60,color: UIColorFromRGB(rgbValue: 0xFFCA4D),titles: titles))
-        allLessons.append(Lesson(image: UIImage(named: "people1")!,title: "Titulo",percentage: 60,color: UIColorFromRGB(rgbValue: 0x794AFF),titles: titles))
+        allLessons.append(Lesson(image: UIImage(named: "moneyBag")!,title: "Conceptos Financieros",percentage: 60,color: UIColorFromRGB(rgbValue: 0x44CBF3),titles: titles))
+        allLessons.append(Lesson(image: UIImage(named: "caculator")!,title: "Instrumentos Financieros",percentage: 60,color: UIColorFromRGB(rgbValue: 0xFF8B36),titles: titles))
+       // allLessons.append(Lesson(image: UIImage(named: "moneyBag")!,title: "Finanzas",percentage: 60,color: UIColorFromRGB(rgbValue: 0xFFCA4D),titles: titles))
+        //allLessons.append(Lesson(image: UIImage(named: "people1")!,title: "Titulo",percentage: 60,color: UIColorFromRGB(rgbValue: 0x794AFF),titles: titles))
         
     }
     
