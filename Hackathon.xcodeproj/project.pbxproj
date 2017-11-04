@@ -15,7 +15,6 @@
 		5BF184C51FAD9AB700F50B15 /* LessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C41FAD9AB700F50B15 /* LessonsTableViewCell.swift */; };
 		5BF184C81FAD9EF000F50B15 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C71FAD9EF000F50B15 /* Lessons.swift */; };
 		5BF184CA1FADB15B00F50B15 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184C91FADB15B00F50B15 /* FriendsTableViewCell.swift */; };
-		5BF184CC1FADB17C00F50B15 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184CB1FADB17C00F50B15 /* FriendsTableViewController.swift */; };
 		794DFD571FAD688A00390DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DFD561FAD688A00390DDC /* AppDelegate.swift */; };
 		794DFD5C1FAD688A00390DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794DFD5A1FAD688A00390DDC /* Main.storyboard */; };
 		794DFD5E1FAD688A00390DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794DFD5D1FAD688A00390DDC /* Assets.xcassets */; };
@@ -31,7 +30,6 @@
 		5BF184C41FAD9AB700F50B15 /* LessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableViewCell.swift; sourceTree = "<group>"; };
 		5BF184C71FAD9EF000F50B15 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		5BF184C91FADB15B00F50B15 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
-		5BF184CB1FADB17C00F50B15 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		794DFD531FAD688A00390DDC /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		794DFD561FAD688A00390DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		794DFD5B1FAD688A00390DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 				5BF184C21FAD953D00F50B15 /* GameViewController.swift */,
 				5BF184C41FAD9AB700F50B15 /* LessonsTableViewCell.swift */,
 				5BF184C91FADB15B00F50B15 /* FriendsTableViewCell.swift */,
-				5BF184CB1FADB17C00F50B15 /* FriendsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -180,7 +177,6 @@
 				5BF184C51FAD9AB700F50B15 /* LessonsTableViewCell.swift in Sources */,
 				5BF184BF1FAD94D600F50B15 /* FriendsViewController.swift in Sources */,
 				5BF184BD1FAD94B600F50B15 /* LessonsViewController.swift in Sources */,
-				5BF184CC1FADB17C00F50B15 /* FriendsTableViewController.swift in Sources */,
 				5BF184C11FAD94E500F50B15 /* ProfileViewController.swift in Sources */,
 				794DFD571FAD688A00390DDC /* AppDelegate.swift in Sources */,
 				5BF184C31FAD953D00F50B15 /* GameViewController.swift in Sources */,
