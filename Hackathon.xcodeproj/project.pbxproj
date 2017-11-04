@@ -12,6 +12,7 @@
 		5B1B78BE1FADD4F200019BE4 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B78BD1FADD4F200019BE4 /* VideoViewController.swift */; };
 		5B1B78C21FADE98400019BE4 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1B78C01FADE98400019BE4 /* AVKit.framework */; };
 		5B1B78C31FADE98400019BE4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1B78C11FADE98400019BE4 /* AVFoundation.framework */; };
+		5B1B78C71FADF91300019BE4 /* Test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5B1B78C61FADF61B00019BE4 /* Test.mp4 */; };
 		5BF184BA1FAD8F4300F50B15 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184B91FAD8F4300F50B15 /* HomeViewController.swift */; };
 		5BF184BD1FAD94B600F50B15 /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184BC1FAD94B600F50B15 /* LessonsViewController.swift */; };
 		5BF184BF1FAD94D600F50B15 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF184BE1FAD94D600F50B15 /* FriendsViewController.swift */; };
@@ -108,6 +109,7 @@
 				5BF184C71FAD9EF000F50B15 /* Lessons.swift */,
 				794DFD681FADB78500390DDC /* friends.swift */,
 				5B1B78BB1FADC98400019BE4 /* Title.swift */,
+				794DFD6A1FADC70A00390DDC /* Questions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1B78C71FADF91300019BE4 /* Test.mp4 in Resources */,
 				794DFD611FAD688A00390DDC /* LaunchScreen.storyboard in Resources */,
 				794DFD5E1FAD688A00390DDC /* Assets.xcassets in Resources */,
 				794DFD5C1FAD688A00390DDC /* Main.storyboard in Resources */,
