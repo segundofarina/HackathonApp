@@ -33,7 +33,6 @@ class QuestionsViewController: UIViewController {
         super.viewWillAppear(animated)
         
         if backFromResult {
-            print("acaaaa")
             dismiss(animated: false, completion: nil)
         }
         
@@ -41,7 +40,7 @@ class QuestionsViewController: UIViewController {
         
         db = DataBase()
         
-        if lessons == "Lesson1" {
+        if lessons == "Conceptos Financieros" {
             q = db?.nextCategory1()
         } else {
            q = db?.nextCategory2()

@@ -38,7 +38,7 @@ class LessonsViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Set values
         cell.lessonImage.image = lesson.image
         cell.lessonName.text = lesson.title
-        cell.lessonPercentage.text = "\(lesson.percentage)%"
+        //cell.lessonPercentage.text = "\(lesson.percentage)%"
         cell.lessonView.backgroundColor = lesson.color
         
         return cell
