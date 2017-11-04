@@ -349,6 +349,83 @@
             </objects>
             <point key="canvasLocation" x="582" y="1285"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ajB-YW-KRI">
+            <objects>
+                <viewController id="wmF-kZ-ZDX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ri8-jV-wls">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeQ-Zs-qMS">
+                                <rect key="frame" x="21.5" y="40" width="331" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="Bxo-DE-6Jy"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="questionRectangle">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gaM-IG-MQ9">
+                                <rect key="frame" x="28" y="336" width="319" height="284"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3V-DP-zPO">
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="YkK-KJ-yZW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Button" backgroundImage="answerRectangle">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZO-kQ-qzE">
+                                        <rect key="frame" x="0.0" y="76" width="319" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="bWa-sv-FMI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Button" backgroundImage="answerRectangle">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9p-r9-Sr5">
+                                        <rect key="frame" x="0.0" y="152" width="319" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="4kt-N7-z5o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Button" backgroundImage="answerRectangle">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWg-Wl-oXo">
+                                        <rect key="frame" x="0.0" y="228" width="319" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="Su5-cC-0u6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Button" backgroundImage="answerRectangle">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.43531763553619385" blue="0.40968400239944458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oeQ-Zs-qMS" firstAttribute="top" secondItem="1Wv-ok-cEn" secondAttribute="top" constant="20" id="Co5-JV-Uev"/>
+                            <constraint firstItem="gaM-IG-MQ9" firstAttribute="top" secondItem="1Wv-ok-cEn" secondAttribute="top" constant="316" id="HXf-8s-L1E"/>
+                            <constraint firstItem="oeQ-Zs-qMS" firstAttribute="centerX" secondItem="1Wv-ok-cEn" secondAttribute="centerX" id="Nyn-bv-6d2"/>
+                            <constraint firstItem="gaM-IG-MQ9" firstAttribute="centerX" secondItem="1Wv-ok-cEn" secondAttribute="centerX" id="f2p-OA-i2o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Wv-ok-cEn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFd-lg-Sdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872" y="1104"/>
+        </scene>
         <!--Home-->
         <scene sceneID="GD1-DP-9mt">
             <objects>
@@ -486,8 +563,10 @@
     </scenes>
     <resources>
         <image name="Logo" width="375" height="342"/>
+        <image name="answerRectangle" width="319" height="64"/>
         <image name="background" width="375" height="667"/>
         <image name="people-profile-graphic-design-vector-illustration-eps-63369559" width="105" height="105"/>
+        <image name="questionRectangle" width="331" height="248"/>
         <image name="roundedButton" width="298" height="52"/>
         <image name="trophy" width="151" height="159"/>
     </resources>
